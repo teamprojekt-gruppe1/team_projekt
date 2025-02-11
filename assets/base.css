@@ -1,0 +1,94 @@
+/*************** Reset *********************/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+}
+
+/* ----------------------------------------------------- VARIABLE --------------*/
+:root {
+  /* Primære farve til hele sitet */
+  --primary: #ffe8fb;
+
+  /* Sekundære farve til hele sitet */
+  --secondary: #ff5125;
+
+  /* Kontrast/tertiær farve til hele sitet */
+  --contrast: #055d2c;
+
+  /* Brødtekst farve  */
+  --txt_color: #055d2c;
+
+  /* Primær font */
+  --main_font: "Protest Strike", serif;
+
+  /* Brødtekst font */
+  --txt_font: "Newsreader", serif;
+}
+
+/*-------------------------------------------------------------------------BAGGRUNDSFARVER ----------*/
+.bg_color1 {
+  background-color: var(--primary);
+}
+
+.bg_color2 {
+  background-color: var(--secondary);
+}
+
+.bg_color3 {
+  background-color: var(--contrast);
+}
+/* -----------------------------------------------------Fra google --------------*/
+.protest-strike-regular {
+  font-family: "Protest Strike", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.newsreader-text > {
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* -----------------------------------------------------TEKST--------------*/
+h1 {
+  font-family: var(--main_font);
+  color: var(--secondary);
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: var(--main_font);
+  color: var(--secondary);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: var(--txt_font);
+  color: var(--txt_color);
+}
+
+p {
+  font-family: var(--txt_font);
+  color: var(--txt_color);
+  line-height: 1.5rem;
+  font-size: 0.8em;
+}
+
+a {
+  font-family: var(--main_font);
+  text-decoration: none;
+  color: var(--txt_color);
+  font-weight: 600;
+}
+
+li {
+  font-family: var(--txt_font);
+  color: var(--txt_color);
+  margin-block: 0.8rem;
+}
