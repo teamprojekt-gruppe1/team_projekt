@@ -57,53 +57,59 @@ main {
 } */
 @font-face {
   font-family: protest_strike;
-  src: url(../font/proteststrike-regular-webfont.woff2) format("woff2");
+  src: url(../fonts/proteststrike-regular-webfont.woff2) format("woff2");
   font-weight: normal;
   font-style: normal;
 }
-.newsreader-text > {
+/* .newsreader-text > {
   font-family: "Newsreader", serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  font-style: normal;
+} */
+@font-face {
+  font-family: newsreader;
+  src: url(../fonts/newsreader_font/newsreader-variablefont_opszwght-webfont.woff2) format("woff2");
+  font-weight: normal;
   font-style: normal;
 }
 
 /* -----------------------------------------------------TEKST--------------*/
 h1 {
-  font-family: var(--main_font);
+  font-family: protest_strike;
   color: var(--secondary);
   font-weight: 800;
   font-size: 2.5rem;
 }
 
 h2 {
-  font-family: var(--main_font);
+  font-family: protest_strike;
   color: var(--secondary);
   font-size: 2rem;
   font-weight: 600;
 }
 
 h3 {
-  font-family: var(--txt_font);
+  font-family: newsreader;
   color: var(--txt_color);
 }
 
 p {
-  font-family: var(--txt_font);
+  font-family: newsreader;
   color: var(--txt_color);
   line-height: 1.5rem;
   font-size: 0.8em;
 }
 
 a {
-  font-family: var(--main_font);
+  font-family: protest_strike;
   text-decoration: none;
   color: var(--txt_color);
   font-weight: 600;
 }
 
 li {
-  font-family: var(--txt_font);
+  font-family: newsreader;
   color: var(--txt_color);
   margin-block: 0.8rem;
 }
@@ -116,7 +122,7 @@ header {
   border: solid #055d2c;
   background-color: #ffe8fb;
   margin: 1px;
-  font-family: "Protest Strike", serif;
+  font-family: protest_strike;
 }
 
 nav {
