@@ -111,6 +111,7 @@ header {
   border: solid #055d2c;
   background-color: #ffe8fb;
   margin: 1px;
+  font-family: "Protest Strike", serif;
 }
 
 nav {
@@ -140,7 +141,6 @@ nav {
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
-  font-family: "Protest Strike", serif;
 }
 
 .menu a:hover {
