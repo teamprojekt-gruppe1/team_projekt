@@ -28,11 +28,12 @@ p {
 .cuisine {
   border: 1px solid var(--contrast);
   border-radius: 50%;
-  max-width: 10%;
+  max-width: 15%;
 }
 .cuisine:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.753);
 }
+
 /* PRODUCT_LIST_CONTAINER */
 .product_list_container {
   display: grid;
@@ -88,7 +89,7 @@ p {
 /* DESKTOP */
 @media (min-width: 850px) {
   .cuisine {
-    max-width: 6%;
+    max-width: 7%;
   }
   .scroll_container {
     margin: 2rem;
