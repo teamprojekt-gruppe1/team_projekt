@@ -28,7 +28,7 @@ function showList(recipes) {
                 <p class="boks_indhold">Difficulty: ${recipe.difficulty}</p>
                 <p class="boks_indhold">Cuisine: ${recipe.cuisine}</p>
               </div>
-              <p class="rating">${recipe.rating}/ 5</p>
+              <p class="rating">${recipe.rating}/ 5 ⭐</p>
                 </div>
                 </div>
             </a>
