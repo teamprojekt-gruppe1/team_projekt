@@ -23,10 +23,10 @@ function showList(recipes) {
               <img src="https://cdn.dummyjson.com/recipe-images/${recipe.id}.webp" class="opskrift" alt="margherita" />
              <div class="border">
               <h3>${recipe.name}</h3>
+              <p class="serveringer">Servings: ${recipe.servings}</p>
               <div class="boks">
-                <p>Servings:${recipe.servings}</p>
-                <p>Difficulty:${recipe.difficulty}</p>
-                <p>Cuisine: ${recipe.cuisine}</p>
+                <p class="boks_indhold">Difficulty: ${recipe.difficulty}</p>
+                <p class="boks_indhold">Cuisine: ${recipe.cuisine}</p>
               </div>
               <p class="rating">${recipe.rating}/ 5</p>
                 </div>
