@@ -1,0 +1,38 @@
+/***************************************FORMS****************************************/
+body {
+  background-color: var(--primary);
+}
+label {
+  font-weight: bold;
+  color: var(--txt_color);
+}
+.forms_container {
+  width: 80%;
+  margin: 50px auto;
+  background-color: white;
+  border: solid var(--txt_color);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px; /*Maximun width for containeren*/
+}
+
+input[type="text"], /*CSS for tekst boksene*/
+  textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--txt_color);
+  border-radius: 4px;
+}
+input[type="submit"] {
+  background-color: var(--secondary); /*Farve for submit knap*/
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+input[type="submit"]:hover {
+  background-color: var(--txt_color);
+}
+/***************************************FORMS****************************************/
