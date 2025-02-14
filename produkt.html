@@ -3,24 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--BASE LINKS-->
     <script src="assets/base.js" defer></script>
     <link rel="stylesheet" href="assets/base.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <script src="js/index.js" defer></script>
-    <script src="js/produktliste.js" defer></script>
+
+    <!--PRODUKT LINKS-->
     <script src="js/produkt.js" defer></script>
+    <link rel="stylesheet" href="css/produkt.css" />
+
+    <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gasoek+One&family=Hanalei&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Strike&family=Quicksand:wght@300..700&family=Rasa:ital,wght@0,300..700;1,300..700&family=Rozha+One&family=Rubik+Dirt&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gasoek+One&family=Hanalei&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Strike&family=Quicksand:wght@300..700&family=Rasa:ital,wght@0,300..700;1,300..700&family=Rozha+One&family=Rubik+Dirt&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gasoek+One&family=Hanalei&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Strike&family=Quicksand:wght@300..700&family=Rasa:ital,wght@0,300..700;1,300..700&family=Rozha+One&family=Rubik+Dirt&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gasoek+One&family=Hanalei&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Strike&family=Quicksand:wght@300..700&family=Rasa:ital,wght@0,300..700;1,300..700&family=Rozha+One&family=Rubik+Dirt&display=swap"
+      rel="stylesheet"
+    />
+    <!--FAVICON-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <title>Forside</title>
+    <title>Recipe</title>
   </head>
+
   <body>
     <header>
       <div class="logo">
@@ -40,5 +52,56 @@
         </div>
       </nav>
     </header>
+
+    <main>
+      <div class="recipe_container">
+        <section>
+          <!----------------------------------OVERSKRIFT-->
+          <div class="product_headline">
+            <h3></h3>
+            <h1></h1>
+            <h3></h3>
+          </div>
+        </section>
+        <!----------------------------------OVERSKRIFT-------END-->
+
+        <!----------------------------------BILLEDE OG COOKTIME ECT.-->
+
+        <section>
+          <img class="recipe_image" src="https://cdn.dummyjson.com/recipe-images/1.webp" alt="Billede af opskriftens udfald" />
+
+          <div class="grid_1-1">
+            <div class="info_box">
+              <h4>Difficulty: Medium</h4>
+            </div>
+            <div class="info_box">
+              <h4>Cuisine: Italian</h4>
+            </div>
+            <div class="info_box">
+              <h4>Review Count: 5</h4>
+            </div>
+            <div class="info_box">
+              <h4>Rating: 4.3</h4>
+            </div>
+          </div>
+        </section>
+        <!----------------------------------BILLEDE OG COOKTIME ECT.------END-->
+
+        <section>
+          <!----------------------------------INGREDIENSER OG OPSKRIFT-->
+          <div class="ingrediens_recipe_ingredients">
+            <h2>Ingredients:</h2>
+            <p></p>
+          </div>
+
+          <div class="ingrediens_recipe">
+            <h2>Instructions:</h2>
+            <p></p>
+          </div>
+        </section>
+        <!----------------------------------INGREDIENSER OG OPSKRIFT------END-->
+      </div>
+    </main>
+    <footer></footer>
   </body>
 </html>

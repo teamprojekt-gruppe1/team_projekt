@@ -1,0 +1,69 @@
+.product_headline {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  gap: 20px;
+}
+
+.recipe_image {
+  height: 400px;
+  object-fit: cover;
+  align-self: stretch;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 10px 0 10px 0;
+}
+
+.info_box {
+  border-bottom: 2px solid var(--secondary);
+  padding: 20px 10px 5px 10px;
+  text-align: center;
+}
+
+.info_box h3 {
+  font-family: var(--main_font);
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  color: var(--secondary);
+}
+
+.ingrediens_recipe_ingredients h3 {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.ingrediens_recipe {
+  margin-bottom: 100px;
+}
+
+.ingrediens_recipe h3 {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.ingrediens_recipe p {
+  padding: 0 20px 0 20px;
+}
+
+.recipe_grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+@media screen and (min-width: 800px) {
+  .recipe_grid_1-1 {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    gap: 50px;
+    margin-bottom: 100px;
+  }
+}
