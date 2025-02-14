@@ -34,10 +34,6 @@
   color: var(--secondary);
 }
 
-.ingrediens_recipe_ingredients {
-  margin: 75px 0 75px 0;
-}
-
 .ingrediens_recipe_ingredients h3 {
   margin-bottom: 20px;
   font-size: 1.6rem;
@@ -56,5 +52,18 @@
   padding: 0 20px 0 20px;
 }
 
+.recipe_grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 @media screen and (min-width: 800px) {
+  .recipe_grid_1-1 {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    gap: 50px;
+    margin-bottom: 100px;
+  }
 }

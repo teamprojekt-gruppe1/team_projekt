@@ -18,7 +18,7 @@ fetch(`https://dummyjson.com/recipes/${productId}`)
         <section>
           <!----------------------------------OVERSKRIFT-->
           <div class="product_headline">
-            <h3>${data.difficulty} ${data.mealType}</h3>
+            <h3> ${data.mealType}</h3>
             <h1>${data.name}</h1>
             <h3>preptime: ${data.prepTimeMinutes} minutes, cooktime: ${data.cookTimeMinutes} minutes, ${data.servings} servings</h3>
           </div>
@@ -29,10 +29,10 @@ fetch(`https://dummyjson.com/recipes/${productId}`)
 
           <div class="grid_1-1">
             <div class="info_box">
-              <h3> ${data.servings} Servings</h3>
+              <h3>Difficult rate: ${data.difficulty}</h3>
             </div>
             <div class="info_box">
-              <h3> ${data.caloriesPerServing} kcal per serving</h3>
+              <h3>${data.servings} Servings with ${data.caloriesPerServing} kcal per serving</h3>
             </div>
             <div class="info_box">
               <h3>Cuisine: ${data.cuisine}</h3>
@@ -44,6 +44,7 @@ fetch(`https://dummyjson.com/recipes/${productId}`)
         </section>
 
   <section>
+  <div class="recipe_grid_1-1">
           <div class="ingrediens_recipe_ingredients">
             <h3>Ingredients:</h3>
             <h4>${data.ingredients}</h4>
@@ -56,6 +57,7 @@ fetch(`https://dummyjson.com/recipes/${productId}`)
             </h4>
           </div>
         </section>
+         </div>
     </div>
   
   
