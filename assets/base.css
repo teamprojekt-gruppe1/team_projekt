@@ -16,6 +16,11 @@ main {
   margin: 0 auto;
 }
 
+body {
+  background-color: var(--primary);
+  padding: 10px;
+}
+
 /* ----------------------------------------------------- VARIABLE --------------*/
 :root {
   /* Primære farve til hele sitet */
