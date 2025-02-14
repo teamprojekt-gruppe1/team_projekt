@@ -236,3 +236,32 @@ nav {
 }
 
 /***********************************MENU & BURGERMENU SLUT*****************************/
+/***************************************FOOTER****************************************/
+footer {
+  background-color: #ff5125;
+  color: #ffe8fb;
+  padding: 30px;
+  margin: -15px;
+  text-align: center;
+  align-items: center;
+}
+.share_recipe {
+  border: solid #ffe8fb;
+  padding: 20px;
+  margin: 30px;
+  display: inline-block; /* Sørger for at borderen kun er omkring teksten */
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+footer li {
+  margin: 0 10%; /* margin til li for at skabe afstand mellem links */
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffe8fb;
+}
+/***************************************FOOTER****************************************/
