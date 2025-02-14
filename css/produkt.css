@@ -26,22 +26,30 @@
   text-align: center;
 }
 
-.ingrediens_recipe_ingredients {
-  margin: 75px 0 75px 0;
-  text-align: center;
+.info_box h3 {
+  font-family: var(--main_font);
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  color: var(--secondary);
 }
 
-.ingrediens_recipe_ingredients h2 {
+.ingrediens_recipe_ingredients {
+  margin: 75px 0 75px 0;
+}
+
+.ingrediens_recipe_ingredients h3 {
   margin-bottom: 20px;
+  font-size: 1.6rem;
 }
 
 .ingrediens_recipe {
   margin-bottom: 100px;
 }
 
-.ingrediens_recipe h2 {
-  text-align: center;
+.ingrediens_recipe h3 {
   margin-bottom: 20px;
+  font-size: 1.6rem;
 }
 
 .ingrediens_recipe p {
