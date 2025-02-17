@@ -1,13 +1,17 @@
 let product_list_container = document.querySelector(".product_list_container");
-const mycategory = new URLSearchParams(window.location.search).get("category");
-console.log("produktliste loader...", mycategory);
+const mymeal = new URLSearchParams(window.location.search).get("meal");
+console.log("produktliste loader...", mymeal);
 
-const productlist = document.querySelector(".list");
+const productlist = document.querySelector(".product_list_container");
 const overskrift = document.querySelector("h2");
 
-overskrift.innerHTML = mycategory;
+// productlist.innerHTML = mycategory;
+console.log(mymeal);
 // i fetchen under kun man sidst i linket tilføje ?limit=100 for at få vist fx. 100 eks.
-fetch(`https://dummyjson.com/recipes?category=${mycategory}&limit=30`)
+
+const url = `https://dummyjson.com/recipes/tag/${mymeal}?limit=30`;
+console.log(url);
+fetch(url)
   .then((response) => response.json())
   .then((data) => {
     showList(data.recipes); // Brug den relevante nøgle, f.eks. data.recipes
