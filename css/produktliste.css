@@ -38,6 +38,7 @@ p {
   grid-template-columns: 1fr;
   padding: 25px;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 .product:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.753);
