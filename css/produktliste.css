@@ -8,6 +8,10 @@ h2 {
   padding: 25px;
   text-align: center;
 }
+.scroll_bar {
+  font-size: 15px;
+  text-align: center;
+}
 h3 {
   font-size: 25px;
   padding: 15px 2px;
@@ -97,7 +101,7 @@ p {
 /* DESKTOP */
 @media (min-width: 850px) {
   .scroll_container {
-    margin: 2rem;
+    margin-bottom: 2rem;
   }
   .product_list_container {
     display: grid;
