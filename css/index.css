@@ -5,3 +5,47 @@ lottie-player {
 .index_h1 {
   text-align: center;
 }
+
+.index_h2 {
+  text-align: center;
+  margin-top: 50px;
+  color: #055d2c;
+  margin-bottom: 30px;
+}
+
+/* Mobilversion */
+
+.index_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin: 15px;
+}
+
+.index_cirkel {
+  border-radius: 50%;
+  border: 3px solid #055d2c;
+}
+
+.index_container a {
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .index_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .index_cirkel {
+    border-radius: 50%;
+    border: 3px solid #055d2c;
+  }
+
+  .index_container a {
+    text-align: center;
+  }
+}
