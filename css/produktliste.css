@@ -29,9 +29,6 @@ p {
 .scroll_container::-webkit-scrollbar {
   width: 12px; /* Bredden af scrollbaren */
   height: 15px; /* Højden af scrollbaren, hvis du har horisontal scroll */
-  background-color: rgb(219, 219, 209); /* Farven på scrollbaren */
-  border-radius: 10px; /* Giver rundede hjørner på scrollbaren */
-  border: 1px solid rgb(141, 141, 141); /* En kant rundt om scrollbaren */
 }
 
 /* Style for selve scrollbaren (den del der kan trækkes) */
@@ -71,7 +68,7 @@ p {
 /* PRODUCT_LIST_CONTAINER */
 .product_list_container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Laver kolonner der fylder og tilpasser sig skærmstørrelsen */
   padding: 25px;
   gap: 2rem;
   margin-bottom: 2rem;
@@ -103,8 +100,11 @@ p {
   border: 1px solid var(--contrast);
 }
 .product {
-  display: grid;
-  position: relative;
+  display: grid; /* Gør produktet til en grid container */
+  grid-template-columns: 1fr; /* Sætter produktet til at have én kolonne */
+  grid-template-rows: auto; /* Rækkerne tilpasser sig automatisk */
+  height: 100%; /* Sørg for, at alle produkter fylder hele højden af deres container */
+  position: relative; /* Sørg for, at position: absolute virker på ratingen */
 }
 .opskrift {
   grid-row: 1;
@@ -133,10 +133,5 @@ p {
 @media (min-width: 850px) {
   .scroll_container {
     margin-bottom: 2rem;
-  }
-  .product_list_container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 25px;
   }
 }
