@@ -59,7 +59,7 @@ p {
 .cuisine {
   border: 1px solid var(--contrast);
   border-radius: 50%;
-  width: 70px;
+  width: 80px;
 }
 .cuisine:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.753);
