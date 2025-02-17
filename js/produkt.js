@@ -47,7 +47,13 @@ fetch(`https://dummyjson.com/recipes/${productId}`)
   <div class="recipe_grid_1-1">
           <div class="ingrediens_recipe_ingredients">
             <h3>Ingredients:</h3>
-            <h4>${data.ingredients}</h4>
+            <ul class="ul-elementer">${data.ingredients.map((ingredient) => `<li>${ingredient}</li>`).join("")}</ul>
+
+ <!---ingrediens refererer til ingredienslisten fra API'et. 
+ .map() laver en ny liste med <li>-elementer.
+.join('') fjerner kommaer mellem elementerne.
+Vi sætter det hele ind i en <ul>, så det vises som en rigtig liste i HTML.
+ --->
           </div>
 
           <div class="ingrediens_recipe">
@@ -59,8 +65,5 @@ fetch(`https://dummyjson.com/recipes/${productId}`)
         </section>
          </div>
     </div>
-  
-  
-  
   `;
   });
