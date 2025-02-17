@@ -18,5 +18,5 @@ function showRecipe(data) {
     .join("");
 
   console.log("min markup er ", markup);
-  document.querySelector(".index_container").innerHTML = markup;
+  //document.querySelector(".index_container").innerHTML = markup;
 }
