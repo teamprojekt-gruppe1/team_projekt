@@ -6,6 +6,7 @@ h1 {
 }
 h2 {
   padding: 25px;
+  text-align: center;
 }
 h3 {
   font-size: 25px;
@@ -38,6 +39,7 @@ p {
   grid-template-columns: 1fr;
   padding: 25px;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 .product:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.753);

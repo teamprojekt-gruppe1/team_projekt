@@ -1,7 +1,11 @@
 let product_list_container = document.querySelector(".product_list_container");
-const mymeal = new URLSearchParams(window.location.search).get("meal");
+const mymeal = new URLSearchParams(window.location.search).get("meal"); //URLSearchParams bruges til at hente værdien af meal fra URL'en (f.eks. meal=italian).
 console.log("produktliste loader...", mymeal);
 
+if (mymeal) {
+  const h2Element = document.querySelector("h2"); //finder <h2> elementet og opdaterer det med den korrekte værdi.//
+  h2Element.textContent = mymeal.charAt(0).toUpperCase() + mymeal.slice(1); // toUpperCase() er en metode, der bruges på en streng og returnerer en kopi af strengen, hvor alle bogstaver er gjort store.
+}
 const productlist = document.querySelector(".product_list_container");
 const overskrift = document.querySelector("h2");
 
