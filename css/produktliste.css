@@ -8,11 +8,6 @@ h2 {
   padding: 25px;
   text-align: center;
 }
-.scroll_bar {
-  font-size: 15px;
-  text-align: center;
-  padding: 5px;
-}
 h3 {
   font-size: 25px;
   padding: 15px 2px;
@@ -28,6 +23,41 @@ p {
   overflow: auto;
   gap: 25px;
   margin: 1rem;
+  padding: 15px;
+  padding-right: 15px; /* Giver plads til scrollbaren */
+}
+.scroll_container::-webkit-scrollbar {
+  width: 12px; /* Bredden af scrollbaren */
+  height: 15px; /* Højden af scrollbaren, hvis du har horisontal scroll */
+  background-color: rgb(219, 219, 209); /* Farven på scrollbaren */
+  border-radius: 10px; /* Giver rundede hjørner på scrollbaren */
+  border: 1px solid rgb(141, 141, 141); /* En kant rundt om scrollbaren */
+}
+
+/* Style for selve scrollbaren (den del der kan trækkes) */
+.scroll_container::-webkit-scrollbar-thumb {
+  background-color: rgb(219, 219, 209); /* Farven på scrollbaren */
+  border-radius: 10px; /* Giver rundede hjørner på scrollbaren */
+  border: 1px solid rgb(141, 141, 141); /* En kant rundt om scrollbaren */
+}
+
+/* Style for området, hvor scrollbaren bevæger sig (track) */
+.scroll_container::-webkit-scrollbar-track {
+  background-color: #e7e5e5; /* Farven på baggrunden af scrollbaren */
+  border-radius: 15px; /* Rundede hjørner på track */
+}
+/* Style for hover-effekt på scrollbaren */
+.scroll_container::-webkit-scrollbar-thumb:hover {
+  background-color: var(--secondary); /* Ændrer farven på scrollbaren ved hover */
+}
+.scroll {
+  border: 1px solid var(--contrast);
+  border-radius: 20px;
+  margin: 15px;
+}
+.madkategori {
+  text-align: center;
+  padding: 5px;
 }
 .cuisine {
   border: 1px solid var(--contrast);
