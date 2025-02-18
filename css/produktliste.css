@@ -8,11 +8,6 @@ h2 {
   padding: 25px;
   text-align: center;
 }
-.scroll_bar {
-  font-size: 15px;
-  text-align: center;
-  padding: 5px;
-}
 h3 {
   font-size: 25px;
   padding: 15px 2px;
@@ -28,11 +23,43 @@ p {
   overflow: auto;
   gap: 25px;
   margin: 1rem;
+  padding: 15px;
+  padding-right: 15px; /* Giver plads til scrollbaren */
+}
+.scroll_container::-webkit-scrollbar {
+  width: 12px; /* Bredden af scrollbaren */
+  height: 15px; /* Højden af scrollbaren, hvis du har horisontal scroll */
+}
+
+/* Style for selve scrollbaren (den del der kan trækkes) */
+.scroll_container::-webkit-scrollbar-thumb {
+  background-color: rgb(219, 219, 209); /* Farven på scrollbaren */
+  border-radius: 10px; /* Giver rundede hjørner på scrollbaren */
+  border: 1px solid rgb(141, 141, 141); /* En kant rundt om scrollbaren */
+}
+
+/* Style for området, hvor scrollbaren bevæger sig (track) */
+.scroll_container::-webkit-scrollbar-track {
+  background-color: #e7e5e5; /* Farven på baggrunden af scrollbaren */
+  border-radius: 15px; /* Rundede hjørner på track */
+}
+/* Style for hover-effekt på scrollbaren */
+.scroll_container::-webkit-scrollbar-thumb:hover {
+  background-color: var(--secondary); /* Ændrer farven på scrollbaren ved hover */
+}
+.scroll {
+  border: 1px solid var(--contrast);
+  border-radius: 20px;
+  margin: 15px;
+}
+.madkategori {
+  text-align: center;
+  padding: 5px;
 }
 .cuisine {
   border: 1px solid var(--contrast);
   border-radius: 50%;
-  width: 70px;
+  width: 80px;
 }
 .cuisine:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.753);
@@ -41,7 +68,7 @@ p {
 /* PRODUCT_LIST_CONTAINER */
 .product_list_container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Laver kolonner der fylder og tilpasser sig skærmstørrelsen */
   padding: 25px;
   gap: 2rem;
   margin-bottom: 2rem;
@@ -73,8 +100,11 @@ p {
   border: 1px solid var(--contrast);
 }
 .product {
-  display: grid;
-  position: relative;
+  display: grid; /* Gør produktet til en grid container */
+  grid-template-columns: 1fr; /* Sætter produktet til at have én kolonne */
+  grid-template-rows: auto; /* Rækkerne tilpasser sig automatisk */
+  height: 100%; /* Sørg for, at alle produkter fylder hele højden af deres container */
+  position: relative; /* Sørg for, at position: absolute virker på ratingen */
 }
 .opskrift {
   grid-row: 1;
@@ -103,10 +133,5 @@ p {
 @media (min-width: 850px) {
   .scroll_container {
     margin-bottom: 2rem;
-  }
-  .product_list_container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 25px;
   }
 }
