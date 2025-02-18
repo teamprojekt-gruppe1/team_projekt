@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+}
+.tekst_boks {
+  padding: 20px;
+}
+.tekst_container {
+  margin: 25px;
+}
+.knap {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.knap a {
+  border: 1px solid var(--secondary);
+  padding: 10px;
+  border-radius: 20px;
+}
+.knap a:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.753);
+}
+/* 
+* DESKTOP */
+@media (min-width: 850px) {
+  .tekst_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
