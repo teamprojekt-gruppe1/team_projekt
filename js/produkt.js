@@ -25,8 +25,9 @@ fetch(`https://dummyjson.com/recipes/${productId}`)
         </section>
 
          <section>
+         
           <img class="recipe_image" src="https://cdn.dummyjson.com/recipe-images/${data.id}.webp" alt="Billede af opskriftens udfald" />
-
+       
           <div class="grid_1-1">
             <div class="info_box">
               <h3>Difficult rate: ${data.difficulty}</h3>

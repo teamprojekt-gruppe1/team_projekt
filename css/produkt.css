@@ -8,7 +8,7 @@
 }
 
 .recipe_image {
-  height: 400px;
+  max-height: 400px;
   object-fit: cover;
   align-self: stretch;
 }
@@ -61,7 +61,10 @@
 }
 
 .ul-elementer {
-  list-style: none;
+  list-style-position: inside;
+  list-style-type: circle;
+
+  font-size: 1.2em;
 }
 
 @media screen and (min-width: 800px) {
