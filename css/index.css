@@ -12,8 +12,8 @@ lottie-player {
   color: #055d2c;
   margin-bottom: 30px;
 }
+
 a {
-  font-size: 25px;
   padding: 15px;
 }
 
@@ -28,13 +28,23 @@ a {
   margin-bottom: 2rem;
 }
 
+.index_container a:hover {
+  transform: scale(1.05);
+}
+
 .index_cirkel {
   border-radius: 50%;
   border: 3px solid #055d2c;
+  font-size: 25px;
 }
 
 .index_container a {
   text-align: center;
+}
+
+.index_p {
+  font-size: 20px;
+  font-family: protest strike;
 }
 
 @media (min-width: 800px) {
@@ -45,9 +55,18 @@ a {
     gap: 10px;
   }
 
+  .index_container a:hover {
+    transform: scale(1.05);
+  }
+
   .index_cirkel {
     border-radius: 50%;
     border: 3px solid #055d2c;
+  }
+
+  .index_p {
+    font-size: 20px;
+    font-family: protest strike;
   }
 
   .index_container a {
