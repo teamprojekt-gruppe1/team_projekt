@@ -132,7 +132,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  border: solid #055d2c;
   background-color: #ffe8fb;
   margin: 1px;
   font-family: protest_strike;
@@ -160,15 +159,17 @@ nav {
 
 .menu a {
   display: block;
-  padding: 10px;
+  padding: 11px;
   color: #ff5125;
+  border: 1px solid var(--secondary);
+  border-radius: 20px;
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
 }
 
 .menu a:hover {
-  color: #055d2c;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.753);
 }
 
 .burger {
@@ -247,10 +248,15 @@ footer {
 }
 .share_recipe {
   border: solid #ffe8fb;
+  border-radius: 20px;
   padding: 20px;
   margin: 30px;
   display: inline-block; /* Sørger for at borderen kun er omkring teksten */
 }
+.share_recipe:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.753);
+}
+
 footer ul {
   list-style-type: none;
   display: flex;
@@ -259,9 +265,17 @@ footer ul {
 footer li {
   margin: 0 10%; /* margin til li for at skabe afstand mellem links */
 }
-
+.footer-links {
+  margin-top: 20px;
+}
 footer a {
   text-decoration: none;
   color: #ffe8fb;
+  border: 1px solid var(--primary);
+  border-radius: 20px;
+  padding: 11px;
+}
+footer a:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.753);
 }
 /***************************************FOOTER****************************************/
