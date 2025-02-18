@@ -25,7 +25,7 @@ a {
   grid-template-columns: 1fr 1fr;
   gap: 15px;
   margin: 15px;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .index_container a:hover {
@@ -45,6 +45,11 @@ a {
 .index_p {
   font-size: 20px;
   font-family: protest strike;
+}
+
+.logo_kategori {
+  padding: 10px;
+  margin: 4rem auto;
 }
 
 @media (min-width: 800px) {
