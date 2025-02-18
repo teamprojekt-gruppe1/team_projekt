@@ -12,8 +12,8 @@ lottie-player {
   color: #055d2c;
   margin-bottom: 30px;
 }
+
 a {
-  font-size: 25px;
   padding: 15px;
 }
 
@@ -21,33 +21,52 @@ a {
 
 .index_container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 15px;
   margin: 15px;
   margin-bottom: 2rem;
 }
 
+.index_container a:hover {
+  transform: scale(1.05);
+}
+
 .index_cirkel {
   border-radius: 50%;
   border: 3px solid #055d2c;
+  font-size: 25px;
 }
 
 .index_container a {
   text-align: center;
 }
 
+.index_p {
+  font-size: 20px;
+  font-family: protest strike;
+}
+
 @media (min-width: 800px) {
   .index_container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
+  }
+
+  .index_container a:hover {
+    transform: scale(1.05);
   }
 
   .index_cirkel {
     border-radius: 50%;
     border: 3px solid #055d2c;
+  }
+
+  .index_p {
+    font-size: 20px;
+    font-family: protest strike;
   }
 
   .index_container a {
