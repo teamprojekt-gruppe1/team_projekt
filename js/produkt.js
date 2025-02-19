@@ -19,8 +19,8 @@ fetch(`https://dummyjson.com/recipes/${productId}`)
           <!----------------------------------OVERSKRIFT-->
           <div class="product_headline">
             <h1 class="meal_name">${data.name}</h1>
-            <h3>preptime: ${data.prepTimeMinutes} minutes </h3>
-            <h3>cooktime: ${data.cookTimeMinutes} minutes </h3> 
+            <h3>Preptime: ${data.prepTimeMinutes} minutes </h3>
+            <h3>Cooktime: ${data.cookTimeMinutes} minutes </h3> 
             <h3>${data.servings} servings</h3>
           </div>
         </section>
@@ -34,13 +34,13 @@ fetch(`https://dummyjson.com/recipes/${productId}`)
               <h3>Difficult rate: ${data.difficulty}</h3>
             </div>
             <div class="info_box">
-              <h3>${data.servings} Servings with ${data.caloriesPerServing} kcal per serving</h3>
+              <h3>${data.servings} servings with ${data.caloriesPerServing} kcal per serving</h3>
             </div>
             <div class="info_box">
               <h3>Cuisine: ${data.cuisine}</h3>
             </div>
             <div class="info_box">
-              <h3>  Costumer rating ${data.rating}, from ${data.reviewCount} reviews</h3>
+              <h3>Costumer rating ${data.rating} from ${data.reviewCount} reviews</h3>
             </div>
           </div>
         </section>
