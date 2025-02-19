@@ -59,8 +59,8 @@ Vi sætter det hele ind i en <ul>, så det vises som en rigtig liste i HTML.
 
           <div class="ingrediens_recipe">
             <h3>Instructions:</h3>
-            <h4>
-            ${data.instructions}
+            <ul class="ul-instructions">
+            ${data.instructions.map((instruction) => `<li>${instruction}</li>`).join("")}
             </h4>
           </div>
         </section>
