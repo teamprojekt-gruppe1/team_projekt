@@ -18,9 +18,10 @@ fetch(`https://dummyjson.com/recipes/${productId}`)
         <section>
           <!----------------------------------OVERSKRIFT-->
           <div class="product_headline">
-            <h3> ${data.mealType}</h3>
-            <h1>${data.name}</h1>
-            <h3>preptime: ${data.prepTimeMinutes} minutes, cooktime: ${data.cookTimeMinutes} minutes, ${data.servings} servings</h3>
+            <h1 class="meal_name">${data.name}</h1>
+            <h3>preptime: ${data.prepTimeMinutes} minutes </h3>
+            <h3>cooktime: ${data.cookTimeMinutes} minutes </h3> 
+            <h3>${data.servings} servings</h3>
           </div>
         </section>
 
@@ -59,9 +60,9 @@ Vi sætter det hele ind i en <ul>, så det vises som en rigtig liste i HTML.
 
           <div class="ingrediens_recipe">
             <h3>Instructions:</h3>
-            <ul class="ul-instructions">
+            <ol type="1" class="ul-instructions">
             ${data.instructions.map((instruction) => `<li>${instruction}</li>`).join("")}
-            </h4>
+            </ol>
           </div>
         </section>
          </div>
