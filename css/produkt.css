@@ -67,6 +67,16 @@
   font-size: 1.2em;
 }
 
+.ul-instructions {
+  font-size: 1.2em;
+  list-style-position: inside;
+  letter-spacing: 0.2px;
+}
+
+.meal_name {
+  font-size: 3em;
+}
+
 @media screen and (min-width: 800px) {
   .recipe_grid_1-1 {
     grid-template-columns: 1fr 1fr;
@@ -79,5 +89,9 @@
     margin-bottom: 20px;
     margin-top: 0px;
     font-size: 1.6rem;
+  }
+
+  .meal_name {
+    font-size: 4em;
   }
 }

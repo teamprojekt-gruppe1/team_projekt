@@ -18,9 +18,10 @@ fetch(`https://dummyjson.com/recipes/${productId}`)
         <section>
           <!----------------------------------OVERSKRIFT-->
           <div class="product_headline">
-            <h3> ${data.mealType}</h3>
-            <h1>${data.name}</h1>
-            <h3>preptime: ${data.prepTimeMinutes} minutes, cooktime: ${data.cookTimeMinutes} minutes, ${data.servings} servings</h3>
+            <h1 class="meal_name">${data.name}</h1>
+            <h3>Preptime: ${data.prepTimeMinutes} minutes </h3>
+            <h3>Cooktime: ${data.cookTimeMinutes} minutes </h3> 
+            <h3>${data.servings} servings</h3>
           </div>
         </section>
 
@@ -33,13 +34,13 @@ fetch(`https://dummyjson.com/recipes/${productId}`)
               <h3>Difficult rate: ${data.difficulty}</h3>
             </div>
             <div class="info_box">
-              <h3>${data.servings} Servings with ${data.caloriesPerServing} kcal per serving</h3>
+              <h3>${data.servings} servings with ${data.caloriesPerServing} kcal per serving</h3>
             </div>
             <div class="info_box">
               <h3>Cuisine: ${data.cuisine}</h3>
             </div>
             <div class="info_box">
-              <h3>  Costumer rating ${data.rating}, from ${data.reviewCount} reviews</h3>
+              <h3>Costumer rating ${data.rating} from ${data.reviewCount} reviews</h3>
             </div>
           </div>
         </section>
@@ -59,9 +60,9 @@ Vi sætter det hele ind i en <ul>, så det vises som en rigtig liste i HTML.
 
           <div class="ingrediens_recipe">
             <h3>Instructions:</h3>
-            <h4>
-            ${data.instructions}
-            </h4>
+            <ol type="1" class="ul-instructions">
+            ${data.instructions.map((instruction) => `<li>${instruction}</li>`).join("")}
+            </ol>
           </div>
         </section>
          </div>
