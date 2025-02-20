@@ -68,7 +68,7 @@ p {
 /* PRODUCT_LIST_CONTAINER */
 .product_list_container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Laver kolonner der fylder og tilpasser sig skærmstørrelsen */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Laver kolonner der fylder og tilpasser sig skærmstørrelsen */
   padding: 25px;
   gap: 2rem;
   margin-bottom: 2rem;
