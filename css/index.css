@@ -1,16 +1,48 @@
 lottie-player {
   margin: 0 auto;
 }
+.hero {
+  margin-bottom: 3rem;
+}
 
 .index_h1 {
   text-align: center;
 }
 
-.index_h2 {
+#sektion1 {
   text-align: center;
   margin-top: 50px;
   color: #055d2c;
   margin-bottom: 30px;
+}
+.pil_box {
+  position: absolute;
+  left: 50%; /* Centrerer horisontalt */
+  top: 80%; /* Centrerer vertikalt */
+  transform: translate(-50%, -50%); /* Justerer for præcis centreret position */
+  cursor: pointer;
+}
+.pil_ned {
+  width: 80px;
+  animation: bounce 1s infinite;
+}
+
+/* Hoppende pil */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Juster højden på hoppen */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* scroll ved klik af pil ned knap */
+:root {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 a {

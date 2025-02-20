@@ -34,6 +34,7 @@ Hvor placerer I HTML, CSS- og JavaScript-filer til fx detaljevisning og listevis
 
 Beslutte hvordan i vil navngive filer og mapper for at sikre en ensartet struktur og undgå forvirring.
 
+
 - Til navngivningen af vores filer har vi sørget for, at der er ét gennemgående navn for hver fil på tværs af filtype. Så vores index-side hedder index.html, index.css og index.js. Og det samme for resten af siderne; produktliste.html, produktliste.css og produktliste.js og produkt.html, produkt.css og produkt.js. På den måde kan vi på tværs af gruppen se, hvad der hører sammen, og det gør det nemmere at rette i de filer, der passer sammen.
 
 Hvordan navngiver I filnavne? (fx små bogstaver, ingen mellemrum, brug af - eller \_)
@@ -173,3 +174,4 @@ fetch(url)
 .then((data) => {
 showList(data.recipes); // Brug den relevante nøgle, f.eks. data.recipes
 });
+
